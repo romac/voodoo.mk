@@ -70,6 +70,9 @@ Clean the build products.
 
 - Add `make help`.
 - Log messages detailing what's happening instead of showing the commands being executed (should be configurable).
+- Add support for, at least, C++.
+- Detect current platform, and properly set the dynamic library extension.
+- Add support for static libraries.
 - Fix at least some of the limitations above.
 
 ## License
