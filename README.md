@@ -66,6 +66,12 @@ Clean the build products.
   Doing one without the other is possible without too much effort, but it requires modifying the Makefile.
 - Most likely a ton of others that I haven't thought of yet.
 
+## TODO
+
+- Add `make help`.
+- Log messages detailing what's happening instead of showing the commands being executed (should be configurable).
+- Fix at least some of the limitations above.
+
 ## License
 
 voodoo.mk is released under the [MIT license](http://romac.mit-license.org).
