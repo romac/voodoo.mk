@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>voodoo.mk by romac</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>voodoo.mk</h1>
+        <p>Let the voodoo build your C project for you.</p>
+        <p class="view"><a href="https://github.com/romac/voodoo.mk">View the Project on GitHub <small>romac/voodoo.mk</small></a></p>
+        <ul>
+          <li><a href="https://github.com/romac/voodoo.mk/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/romac/voodoo.mk/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/romac/voodoo.mk">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>voodoo.mk</h1>
+
+<blockquote>
+<p>Let the voodoo build your C project for you.<br>
+voodoo.mk is a simple Makefile which helps you build your C project.</p>
+</blockquote>
+
+<p>I've been amazed by <a href="https://github.com/macmade">@macmade</a>'s <a href="https://github.com/macmade/Magic-Makefile">Magic Makefile</a> since its release, although I never really took time to understand how it really works.<br>
+I figured the best way to do so was to write one myself, and there is voodoo.mk.<br>
+It's nowhere as powerful as Magic Makefile, and it will most likely never be, but I learned a lot writing it, and I intend to improve it.</p>
+
+<h2>Warning</h2>
+
+<p>This is mostly an educational project, with a lot of quirks and <a href="#limitations">limitations</a>.<br>
+If you need a full-featured Makefile, make sure to check out <a href="https://github.com/macmade/Magic-Makefile">Magic Makefile</a>, and its lot of amazing features.</p>
+
+<h2>Usage</h2>
+
+<pre><code>$ mkdir my-project
+$ wget https://raw.github.com/romac/voodoo.mk/master/Makefile
+$ make init
+</code></pre>
+
+<p>That will create the following directory structure:</p>
+
+<pre><code>my-project/
+├── Makefile
+├── build
+│   ├── bin
+│   ├── lib
+│   └── obj
+│       └── lib
+├── src
+│   ├── include
+│   └── lib
+│       └── include
+└── test
+    ├── bin
+    └── lib
+</code></pre>
+
+<p>Now, just edit <code>Makefile</code>, and follow the instructions inside.
+Once you're done, start coding, and run <code>make</code> from time to time :)</p>
+
+<h2>Commands</h2>
+
+<h3><code>make init</code></h3>
+
+<p>Create the expected directory structure.</p>
+
+<h3><code>make</code></h3>
+
+<p>Build both the dynamic library and the executable.</p>
+
+<h3><code>make run</code></h3>
+
+<p>Run (and build, if needed) the executable.</p>
+
+<h3><code>make test</code></h3>
+
+<p>Run (and build, if needed) the test binary.</p>
+
+<h3><code>make clean</code></h3>
+
+<p>Clean the build products.</p>
+
+<h2>Limitations</h2>
+
+<ul>
+<li>Only supports C code.</li>
+<li>Only works on OS X.</li>
+<li>Assume you want to build both a dynamic library and well as an executable, linked with the former.<br>
+Doing one without the other is possible without too much effort, but it requires modifying the Makefile.</li>
+<li>Most likely a ton of others that I haven't thought of yet.</li>
+</ul><h2>License</h2>
+
+<p>voodoo.mk is released under the <a href="http://romac.mit-license.org">MIT license</a>.</p>
+      </section>
+    </div>
+    <footer>
+      <p>Project maintained by <a href="https://github.com/romac">romac</a></p>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-21073895-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
