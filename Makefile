@@ -80,6 +80,7 @@ clean:
 
 init:
 	mkdir -p $(DIRS)
+	$(foreach dir, $(DIRS), touch $(dir)/.keep;) # TODO: change ; to & when on Windows.
 
 .PHONY: all run test clean install init
 
