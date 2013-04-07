@@ -66,7 +66,7 @@ LIB_OBJECTS = $(subst $(DIR_LIB), $(DIR_BUILD_OBJ_LIB), $(LIB_SOURCES:.c=.o))
 
 all: $(EXEC) $(DYLIB)
 
-run: exec
+run: $(EXEC)
 	./$(EXEC)
 
 $(EXEC): $(DYLIB) $(OBJECTS)
