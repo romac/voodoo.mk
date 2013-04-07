@@ -13,7 +13,7 @@ It's nowhere as powerful as Magic Makefile, and it will most likely never be, bu
 This is mostly an educational project, with a lot of quirks and [limitations](#limitations).  
 If you need a full-featured Makefile, make sure to check out [Magic Makefile][], and its lot of amazing features.
 
-[Magic Makefile]: https://github.com/macmade/Magic-Makefile
+[Magic Makefile]: http://www.eosgarden.com/en/opensource/magic-makefile/overview/
 
 ## Usage
 
