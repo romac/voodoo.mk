@@ -53,7 +53,11 @@ to create `.keep` files in the directory structure:
     $ VOODOO_NOKEEP=1 make init
 
 ### `make`
-Build both the dynamic library and the executable.
+Build both the dynamic library and the executable.  
+
+Set the environment variable `DEBUG` to `1` if you want to generate source level debug information:
+
+    $ DEBUG=1 make
 
 ### `make run`
 Run (and build, if needed) the executable.

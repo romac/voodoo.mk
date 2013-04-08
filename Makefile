@@ -34,6 +34,10 @@ CC = clang
 CFLAGS = -Wall -std=c99
 LDFLAGS = 
 
+ifeq ($(DEBUG),1)
+CFLAGS += -g
+endif
+
 DIR_BUILD = build
 DIR_BUILD_BIN = $(DIR_BUILD)/bin
 DIR_BUILD_OBJ = $(DIR_BUILD)/obj
