@@ -64,7 +64,7 @@ OBJECTS = $(subst $(DIR_SRC), $(DIR_BUILD_OBJ), $(SOURCES:.c=.o))
 LIB_SOURCES = $(wildcard $(DIR_LIB)/*.c)
 LIB_OBJECTS = $(subst $(DIR_LIB), $(DIR_BUILD_OBJ_LIB), $(LIB_SOURCES:.c=.o))
 
-all: $(EXEC) $(DYLIB)
+all: $(DYLIB) $(EXEC)
 
 run: $(EXEC)
 	./$(EXEC)
@@ -93,7 +93,8 @@ install:
 	@exit 1
 
 clean:
-	rm -rf $(TEST_BIN)
+	rm -rf $(TEST)
+	rm -rf $(EXEC)
 	rm -rf $(DIR_BUILD_OBJ)/*.o
 	rm -rf $(DIR_BUILD_LIB)/*.dylib
 	rm -rf $(DIR_BUILD_OBJ_LIB)/*.o
