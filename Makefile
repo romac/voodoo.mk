@@ -100,7 +100,9 @@ clean:
 
 init:
 	mkdir -p $(DIRS)
+ifneq ($(VOODOO_NOKEEP),1)
 	$(foreach dir, $(DIRS), touch $(dir)/.keep;) # TODO: change ; to & when on Windows.
+endif
 
 .PHONY: all run test clean install init
 

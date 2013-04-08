@@ -45,7 +45,12 @@ Once you're done, start coding, and run `make` from time to time :)
 ## Commands
 
 ### `make init`
-Create the expected directory structure.
+Create the expected directory structure.  
+
+Set the environment variable `VOODOO_NOKEEP` to `1` if you don't want vooodoo.mk
+to create `.keep` files in the directory structure:  
+
+    $ VOODOO_NOKEEP=1 make init
 
 ### `make`
 Build both the dynamic library and the executable.
