@@ -5,13 +5,14 @@
 > voodoo.mk is a simple Makefile which helps you build your C project.
 
 I've been amazed by [@macmade](https://github.com/macmade)'s [Magic Makefile][] since its release, although I never really took time to understand how it really works.  
-I figured the best way to do so was to write one myself, and there is voodoo.mk.  
-It's nowhere as powerful as Magic Makefile, and it will most likely never be, but I learned a lot writing it, and I intend to improve it.
+I figured the best way to do so was to write one myself.   
+And here it is! voodoo.mk is nowhere as powerful as Magic Makefile, and it will most likely never be, but I learned a lot writing it, and I intend to improve it.
 
 ## Warning
 
 This is mostly an educational project, with a lot of quirks and [limitations](#limitations).  
-If you need a full-featured Makefile, make sure to check out [Magic Makefile][], and its lot of amazing features.
+Your awesome project will most likely need more magic, and a more powerful and configurable build system,
+so make sure to check out [Magic Makefile][], and its lot of amazing features.
 
 [Magic Makefile]: http://www.eosgarden.com/en/opensource/magic-makefile/overview/
 
