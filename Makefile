@@ -75,10 +75,10 @@ $(EXEC): $(DYLIB) $(OBJECTS)
 $(DIR_BUILD_LIB)/%.dylib: $(LIB_OBJECTS)
 	$(CC) $(CFLAGS) -dynamiclib $^ -o $@ $(LDFLAGS)
 
-$(DIR_BUILD_OBJ)/%.o: $(DIR_SRC)/%.c
+$(DIR_BUILD_OBJ)/%.o: $(DIR_SRC)/%.c $(HEADERS) $(LIB_HEADERS)
 	$(CC) -I $(DIR_SRC_INCLUDE) -I $(DIR_LIB_INCLUDE) $(CFLAGS) -c $< -o $@
 
-$(DIR_BUILD_OBJ_LIB)/%.o: $(DIR_LIB)/%.c
+$(DIR_BUILD_OBJ_LIB)/%.o: $(DIR_LIB)/%.c $(HEADERS) $(LIB_HEADERS)
 	$(CC) -I $(DIR_LIB_INCLUDE) $(CFLAGS) -c $< -o $@
 
 test: $(TEST_BIN)
